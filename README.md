@@ -25,7 +25,6 @@ NODE_ENV=development
 ## How to run locally
 
 - `npm install`
-- Create a 
 - `npm run start`
 - [Open localhost:5000/health](http://localhost:5000/health)
 
