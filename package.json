@@ -4,6 +4,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build:docker": "eval $(minikube docker-env) && docker build -t auth-service . && minikube image push auth-service",
     "start": "node src/server.js"
   },
   "keywords": [],
