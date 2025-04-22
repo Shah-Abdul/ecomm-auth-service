@@ -15,7 +15,7 @@
 Create a `.env` file locally at the project root, with the following entries:
 ```
 PORT=5000
-MONGODB_URI=mongodb://localhost:27017/ecommerce
+MONGODB_URI=mongodb://root:rootpassword@0.0.0.0:27017
 JWT_ACCESS_SECRET=your_strong_access_secret_key_here
 JWT_REFRESH_SECRET=your_strong_refresh_secret_key_here
 FRONTEND_URL=http://localhost:3000

@@ -21,6 +21,7 @@ app.use(
   })
 );
 
+console.log('env mongo URI is..', process.env.MONGODB_URI)
 // MongoDB Connection
 mongoose
   .connect(process.env.MONGODB_URI || "mongodb://localhost:27017/ecommerce", {
