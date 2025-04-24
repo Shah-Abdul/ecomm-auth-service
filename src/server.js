@@ -18,10 +18,12 @@ app.use(
   cors({
     origin: process.env.FRONTEND_URL || "http://localhost:3000",
     credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
 
-console.log('env mongo URI is..', process.env.MONGODB_URI)
+console.log("env mongo URI is..", process.env.MONGODB_URI);
 // MongoDB Connection
 mongoose
   .connect(process.env.MONGODB_URI || "mongodb://localhost:27017/ecommerce", {

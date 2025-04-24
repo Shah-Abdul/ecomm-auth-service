@@ -12,7 +12,9 @@
 > - [Visual Studio Code](https://code.visualstudio.com/Download).
 
 ### Prerequisite to running locally
+
 Create a `.env` file locally at the project root, with the following entries:
+
 ```
 PORT=5000
 MONGODB_URI=mongodb://root:rootpassword@0.0.0.0:27017
@@ -28,9 +30,16 @@ NODE_ENV=development
 - `npm run start`
 - [Open localhost:5000/health](http://localhost:5000/health)
 
-If everything goes well, you should receive a payload like this: 
+If everything goes well, you should receive a payload like this:
+
 ```
 {
   "status": "up"
 }
 ```
+
+## Make service available to ecomm App
+
+We need to build this service's docker image, and push it to the local minikube registry. The commands to do these steps have been conveniently added in a script:
+
+`npm run build:docker`
